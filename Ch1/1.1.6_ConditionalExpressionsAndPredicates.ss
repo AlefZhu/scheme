@@ -1,0 +1,17 @@
+(define (abs_one x)
+    (cond ((< x 0) (- x))
+          (else x)))
+
+(define (abs_two x)
+    (cond ((< x 0) (- x))
+          ((= x 0) 0)
+          ((> x 0) x)))
+
+(define (abs_three x)
+    (if (< x 0)
+        (- x)
+        x))
+(display (abs_one -2))
+(display (abs_two 3))
+(display (abs_three -100))
+(exit)
